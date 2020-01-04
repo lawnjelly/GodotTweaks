@@ -40,6 +40,7 @@ func export(var mesh_inst, var filename = "../test.obj"):
 	
 	var nVerts = mdt.get_vertex_count()
 	if nVerts == 0:
+		printerr("ObjExport::export : nVerts is 0, aborting")
 		return
 		
 	var nFaces = mdt.get_face_count()
